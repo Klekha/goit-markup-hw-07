@@ -1,0 +1,40 @@
+.procces-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.procces {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--fourth-text-color);
+    margin-bottom: 94px;
+}
+
+.photo-list {
+    display: flex;
+}
+
+.work-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.work-item {
+    position: relative;
+}
+
+.procces-text-photo {
+    @include font (14px, 1.14, 700, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 70px;
+@extend %align-list;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
