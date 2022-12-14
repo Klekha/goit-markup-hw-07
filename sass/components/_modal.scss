@@ -45,6 +45,15 @@
     @extend %align-list;
     justify-content: center;
     cursor: pointer;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0;
+        &:focus,
+            &:hover {
+            border-color: var(--six-color);
+        }
 }
 
 .modal-close-icon {
@@ -158,6 +167,7 @@
 
 .done-icon {
     fill: #ffffff;
+    cursor: pointer;
 }
 
 

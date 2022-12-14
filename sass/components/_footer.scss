@@ -14,13 +14,17 @@
 }
 
 .footer-nav-link {
+    font-style: normal;
     @include font (14px, 1.71, 400, 0.03em);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--third--text--color);
-        &:hover,
-            &:focus {
-                color: #ffffff;
-            }
+    color: var(--main-title-color);
+}
+
+.footer__nav--mod {
+    font-style: normal;
+        @include font (14px, 1.71, 400, 0.03em);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: var(--third-text-color);
 }
 
 
@@ -152,6 +156,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    border: none;
 }
 
 .footer-icon-send {
